@@ -9,7 +9,6 @@ from nilearn import plotting
 path_to_read_files = '/Volumes/Seagate Backup Plus Drive/Azam/ISLES/2018/TRAINING/'
 files = [f for f in glob.glob(path_to_read_files+'*/*/*.nii')]
 for f in files:
-    
     if f.find("4DPWI")==-1:  # to make sure it is 3D data
         print(f)
         CT_img = nib.load(f)
