@@ -14,6 +14,5 @@ for f in files:
         print(f)
         CT_img = nib.load(f)
         print('image shape is : '+ str(CT_img.shape))
-        #plotting.plot_stat_map(CT_img)
         plotting.plot_img(CT_img)
-        print('---------------------------------------------------------------------------')
+        plotting.show()
