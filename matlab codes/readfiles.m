@@ -71,3 +71,4 @@ OT_img = double(OT_img);
 % CT_Tmax_img(CT_Tmax_img>300) = 300;
 
 figure,colormap(gray),imagesc(OT_img(:,:,4))
+a = 3;
