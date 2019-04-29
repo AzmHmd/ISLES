@@ -46,7 +46,7 @@ number of expert segmentation for each case:	1
 MRI sequences: 	T1c, T2, DWI, CBF, CBV, TTP, Tmax
 
 ---------------------------------------------------------------------------------------------------------------------------
-# ISLES-2016:
+# ISLES-2016: it is extended in 2017 challenge with some additional cases.
 
 *** Tasks: ISLES 2016 provides a segmentation and a regression task:
 
