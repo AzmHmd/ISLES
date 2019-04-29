@@ -71,4 +71,15 @@ OT_img = double(OT_img);
 % CT_Tmax_img(CT_Tmax_img>300) = 300;
 
 figure,colormap(gray),imagesc(OT_img(:,:,4))
-a = 3;
+cd('/home/sapma3/Maryam/codes/ISLES_Azam/SISS2015_Training/1/VSD.Brain.XX.O.MR_DWI.70613')
+
+DWI_70613 = load_untouch_nii('VSD.Brain.XX.O.MR_DWI.70613.nii');
+DWI_70613_img = (DWI_70613.img);
+max_img = max(DWI_70613_img(:));
+
+for i = 1:size(DWI_70613_img,3)
+    if max(max(DWI_70613_img(:,:,i)))>0
+        file_name = ['DWI_70613_' num2str(i) '.png'];
+    imwrite(DWI_70613_img(:,:,i)/max_img,file_name)
+    end
+end
