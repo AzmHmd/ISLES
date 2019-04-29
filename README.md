@@ -75,22 +75,21 @@ For ISLES 2016, 35 training and roughly 40 testing cases has been made public.
 *** Tasks:
 
 ***Data
-IMAGE FORMAT & PRE-PROCESSING
-
+**IMAGE FORMAT & PRE-PROCESSING
 Images will be available in uncompressed Neuroimaging Informatics Technology Initiative (NIfTI) format: *.nii. All MRI sequences have been skull stripped, anonymized and co-registered for each subject individually. No further pre-processing took place, allowing participants to apply their optimised processing pipelines.
-ACUTE IMAGING DATA DETAILS
 
+**ACUTE IMAGING DATA DETAILS
 Training data set consists of 43 patients. Developed techniques will be evaluated by means of a testing set including 32 stroke cases. Acquired MRI sequences are described in detail below.
-DIFFUSION MAPS (DWI, ADC)
 
+**DIFFUSION MAPS (DWI, ADC)
 Under-perfused brain tissue can be recognised as hyper-intense regions of the DWI trace images (DWI maps). Contrary the apparent diffusion coefficient (ADC) maps show these regions as dark areas. In comparison, ADC maps do not suffer from confounding T2 shine-through effects as observed on DWI maps.
-PERFUSION MAPS (CBV, CBF, MTT, TTP, Tmax)
 
+**PERFUSION MAPS (CBV, CBF, MTT, TTP, Tmax)
 To assess cerebral perfusion a contrast agent (CA) is administered to the patient and its temporal change is captured in dynamic susceptibility scans. Subsequently, perfusion maps are derived from these raw data for clinical interpretation of perfusion of blood within the brain tissue. Different maps aim to yield different information of perfusion, most commonly calculated maps are: The cerebral blood volume (CBV), cerebral blood flow (CBF) and mean transit time (MTT), defined as the ratio of volume to flow of cerebral blood (CBV/CBF). Furthermore, the time to peak concentration of the CA (TTP) and the time need at which the (deconvolved) residue function reaches its maximum value (Tmax).
 
 For ISLES 2017, those maps were computed by means of Olea Sphere's block decomposition.
-FOLLOW-UP STROKE IMAGING
 
+**FOLLOW-UP STROKE IMAGING
 To assess the final lesion outcome, an anatomical sequence (T2w or FLAIR) was acquired when the stroke lesion had stabilised. Provided ground-truth segmentation maps were manually drawn on those scans.
 
 ---------------------------------------------------------------------------------------------------------------------
