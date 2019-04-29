@@ -2,8 +2,10 @@
 
 # ISLES-2015:
 
-Tasks:
+**Tasks:
 
 SISS: sub-acute ischemic stroke lesion segmentation
 
 SPES: acute stroke outcome/penumbra estimation
+
+**Dataset
